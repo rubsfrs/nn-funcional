@@ -3,8 +3,8 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Diferenciais from './components/Diferenciais/Diferenciais';
 import Modalidades from './components/Modalidades/Modalidades';
+import CtaWhatsapp from './components/CtaWhatsapp/CtaWhatsapp';
 import Localizacao from './components/Localizacao/Localizacao';
-import CtaWhatsapp from './components/CtaWhatsapp/CtaWhatsapp'
 import Footer from './components/Footer/Footer';
 
 function AnimatedSection({ children }) {
@@ -27,11 +27,15 @@ function App() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <Beneficios />
+        <Diferenciais />
       </AnimatedSection>
 
       <AnimatedSection>
         <Modalidades />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <CtaWhatsapp />
       </AnimatedSection>
 
       <AnimatedSection>
