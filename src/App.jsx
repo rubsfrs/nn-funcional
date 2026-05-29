@@ -1,9 +1,10 @@
 import { useAnimateOnScroll } from './hooks/useAnimateOnScroll';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
-import Beneficios from './components/Beneficios/Beneficios';
+import Diferenciais from './components/Diferenciais/Diferenciais';
 import Modalidades from './components/Modalidades/Modalidades';
 import Localizacao from './components/Localizacao/Localizacao';
+import CtaWhatsapp from './components/CtaWhatsapp/CtaWhatsapp'
 import Footer from './components/Footer/Footer';
 
 function AnimatedSection({ children }) {
