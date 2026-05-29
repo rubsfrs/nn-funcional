@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap');
+
+:root {
+  --color-background: #F9F9F9;
+  --font-headings: 'Clash Display', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --color-orange: #FF6B00;
+  --color-black: #111111;
+  --color-gray-dark: #444444;
+  --color-gray-medium: #737373;
+  --color-gray-light: #A3A3A3;
+  --color-off-white: #F9F9F9;
+  --color-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background-color: var(--color-background);
+  scroll-behavior: smooth;
+  font-size: 16px; 
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-black);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 15px;
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-orange);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 56px;
+    line-height: 105%;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 110%;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 120%;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+}

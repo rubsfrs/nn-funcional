@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    width: 100%;
+    padding: 32px 16px 24px 16px;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border-top: 3px solid var(--color-orange); 
+}
+
+.topoFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 56px;
+    height: auto;
+}
+
+.botaoTopo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body), sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.botaoTopo img {
+    width: 16px;
+    height: 16px;
+}
+
+.divisor {
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin-bottom: 24px;
+}
+
+.contatoArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.tituloContato {
+    font-family: var(--font-body), sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4C4C4C;
+    text-transform: uppercase;
+    line-height: 150%;
+    text-align: center;
+}
+
+.linkWhats {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-body), sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.linkWhats img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0);
+}
+
+.direitosText {
+    font-family: var(--font-body), sans-serif;
+    font-size: 13px;
+    color: #666666;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 48px 0 32px 0;
+    }
+
+    .topoFooter, .divisor, .contatoArea, .direitosText {
+        width: 85%;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .topoFooter {
+        margin-bottom: 32px;
+    }
+
+    .divisor {
+        margin-bottom: 32px;
+    }
+
+    .contatoArea {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .tituloContato {
+        text-align: left;
+    }
+
+    .linkWhats {
+        font-size: 16px;
+    }
+
+    .linkWhats img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .direitosText {
+        text-align: left;
+    }
+}
