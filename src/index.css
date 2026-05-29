@@ -100,6 +100,18 @@ img {
   height: auto;
 }
 
+.hiddenEffect {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.visibleEffect {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (min-width: 1024px) {
   h1 {
     font-size: 56px;
